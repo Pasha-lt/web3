@@ -6,5 +6,10 @@ pragma solidity ^0.6.0;
 // Определяем контракт. Пишем зарезервированое ключевое слово contract затем Имя нашего контракта и 
 // в фигурных скобках код. 
 contract SimpleStorage {
+    // Будет равно 0
+    uint256 favoriteNumber;
 
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    } 
 }
